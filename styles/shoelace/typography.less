@@ -1,7 +1,7 @@
 // Typography
 
 // Fonts
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Lato:300,400,700,300italic,400italic,700italic|Open+Sans:300italic,400italic,700italic,400,700|Raleway:400,300,700|Oswald:400,300,700);
+@import url(//fonts.googleapis.com/css?family=Droid+Sans|Lato:300,400,700,300italic,400italic,700italic|Open+Sans:300italic,400italic,700italic,400,700|Raleway:400,300,700|Oswald:400,300,700);
 
 // Body
 body {
@@ -9,25 +9,28 @@ body {
     font-size: (@font-size * 1.6);
     line-height: @line-height;
 
-    @media @tablet-landscape {
-        (@font-size * 1.55);
+    @media @mobile-portrait-maximum {
+        font-size: (@font-size * 1.4);
     }
 
-    @media @tablet-portrait {
-        (@font-size * 1.5);
+    @media @mobile-landscape-minimum {
+        font-size: (@font-size * 1.45);
     }
 
-    @media @mobile-landscape {
-        (@font-size * 1.45);
+    @media @tablet-portrait-minimum {
+        font-size: (@font-size * 1.5);
     }
 
-    @media @mobile-portrait {
-        (@font-size * 1.4);
+    @media @tablet-landscape-minimum {
+        font-size: (@font-size * 1.55);
     }
 }
 
 // Headers
 h1, h2, h3, h4, h5, h6 {
+    font-family: @font-family-headers;
+    font-weight: normal;
+    line-height: 1.4;
 
     &.bar {
         position: relative;
@@ -55,7 +58,8 @@ h1, h2, h3, h4, h5, h6 {
             }
 
             span {
-                padding-right: 15px;
+                margin-right: -10px;
+                padding-right: (@padding / 2);
                 position: relative;
                 z-index: 1;
             }
@@ -65,12 +69,15 @@ h1, h2, h3, h4, h5, h6 {
             }
 
             &.text-center span {
-                padding-left: 15px;
-                padding-right: 15px;
+                margin-left: -10px;
+                margin-right: -10px;
+                padding-left: (@padding / 2);
+                padding-right: (@padding / 2);
             }
 
             &.text-right span {
-                padding-left: 15px;
+                margin-left: -10px;
+                padding-left: (@padding / 2);
             }
         }
         
@@ -88,71 +95,78 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: (@font-size * 4);
-    font-size: 4em;
-    margin: 20px 0 10px;
+    font-size: (@font-size-headers-h1); //40px
+    margin-bottom: (@padding / 2);
+    margin-top: @padding;
 
-    @media @tablet-landscape {
-        font-size: (@font-size * 3.6);
+    @media @mobile-portrait-maximum {
+        font-size: (@font-size-headers-h1 * 2.4);
     }
 
-    @media @tablet-portrait {
-        font-size: (@font-size * 3.2);
+    @media @mobile-landscape-minimum {
+        font-size: (@font-size-headers-h1 * 2.8);
     }
 
-    @media @mobile-landscape {
-        font-size: (@font-size * 2.8);
+    @media @tablet-portrait-minimum {
+        font-size: (@font-size-headers-h1 * 3.2);
     }
 
-    @media @mobile-portrait {
-        font-size: (@font-size * 2.4);
+    @media @tablet-landscape-minimum {
+        font-size: (@font-size-headers-h1 * 3.6);
     }
 }
 
 h2 {
-    font-size: (@font-size * 2.6);
-    margin: 20px 0 10px;
+    font-size: (@font-size-headers-h2); //26px
+    margin-bottom: (@padding / 2);
+    margin-top: @padding;
 
-    @media @tablet-landscape {
-        font-size: (@font-size * 2.4);
+    @media @mobile-portrait-maximum {
+        font-size: (@font-size-headers-h2 * 1.8);
     }
 
-    @media @tablet-portrait {
-        font-size: (@font-size * 2.2);
+    @media @mobile-landscape-minimum {
+        font-size: (@font-size-headers-h2 * 2);
     }
 
-    @media @mobile-landscape {
-        font-size: (@font-size * 2);
+    @media @tablet-portrait-minimum {
+        font-size: (@font-size-headers-h2 * 2.2);
     }
 
-    @media @mobile-portrait {
-        font-size: (@font-size * 1.8);
+    @media @tablet-landscape-minimum {
+        font-size: (@font-size-headers-h2 * 2.4);
     }
 }
 
 h3 {
-    font-size: 1.6em;
-    margin: 10px 0;
+    font-size: @font-size-headers-h3;
+    margin-bottom: (@padding / 2);
+    margin-top: (@padding / 2);
+
 }
 
 h4 {
-    font-size: 1.4em;
-    margin: 10px 0;
+    font-size: @font-size-headers-h4;
+    margin-bottom: (@padding / 2);
+    margin-top: (@padding / 2);
 }
 
 h5 {
-    font-size: 1.2em;
-    margin: 10px 0;
+    font-size: @font-size-headers-h5;
+   margin-bottom: (@padding / 2);
+    margin-top: (@padding / 2);
 }
 
 h6 {
-    margin: 10px 0;
-    font-size: 1em;
+    font-size: @font-size-headers-h6;
+    margin-bottom: (@padding / 2);
+    margin-top: (@padding / 2);
 }
 
 // Body
 p {
-	margin: 0 0 10px;
+	margin-bottom: (@padding / 2);
+    margin-top: 0;
 }
 
 // Alignment
@@ -191,7 +205,7 @@ p {
 
 // Lists
 ul {
-	margin-bottom: 20px;
+	margin-bottom: @padding;
 }
 
 .list-unstyled {

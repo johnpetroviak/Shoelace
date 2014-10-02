@@ -1,26 +1,51 @@
 // Variables
 
-// Fonts
-
-// Body
+// Typography
+// Base
 @font-family: 'Open Sans';
-@line-height: 16px;
-@font-size: '10px';
+@font-size: 10px;
+@line-height: (@font-size * 1.6);
+
+// Headers
+@font-family-headers: 'Raleway';
+@font-size-headers-h1: (@font-size * 4);
+@font-size-headers-h2: (@font-size * 2.6);
+@font-size-headers-h3: (@font-size * 1.6);
+@font-size-headers-h4: (@font-size * 1.4);
+@font-size-headers-h5: (@font-size * 1.2);
+@font-size-headers-h6: (@font-size);
 
 // Colors
-@color-default:;
-@color-primary:;
-@background-header:;
-@color-header:;
-@background-main:;
-@color-main:;
-@background-footer:;
-@color-footer:;
+@color-default: #000;
+@color-primary: red;
+@background-header: #fff;
+@color-header: #555;
+@background-main: #ccc;
+@color-main: #000;
+@background-footer: #808080;
+@color-footer: #fff;
+
+// General
+@padding: 20px;
+
+// Grid
+@tile-1: 8.333333333%;
+@tile-2: 16.666666667%;
+@tile-3: 25%;
+@tile-4: 33.333333333%;
+@tile-5: 41.666666667%;
+@tile-6: 50%;
+@tile-7: 58.333333333%;
+@tile-8: 66.666666667%;
+@tile-9: 75%;
+@tile-10: 83.333333333%;
+@tile-11: 91.666666667%;
+@tile-12: 100%;
 
 // Responsive Breakpoints
-@mobile-landscape-minimum: 321px;
-@tablet-portrait-minimum: 569px;
-@tablet-landscape-minimum: 769px;
+@mobile-landscape-minimum: 568px;
+@tablet-portrait-minimum: 768px;
+@tablet-landscape-minimum: 1024px;
 @desktop-minimum: 1025px;
 @tv-720p-minimum: 1280px;
 @tv-1080p-minimum: 1920px;
@@ -31,3 +56,11 @@
 @tablet-landscape-maximum: (@desktop-minimum - 1);
 @desktop-maximum: (@tv-720p-minimum - 1);
 @tv-720p-maximum: (@tv-1080p-minimum - 1);
+
+@mobile-portrait: "(max-width: "@mobile-portrait-maximum"px)";
+@mobile-landscape: "(min-width: "@mobile-landscape-minimum"px and max-width: "@mobile-landscape-maximum"px)";
+@tablet-portrait: "(min-width: "@tablet-portrait-minimum"px and max-width: "@tablet-portrait-maximum"px)";
+@tablet-landscape: "(min-width: "@tablet-landscape-minimum"px and max-width: "@tablet-landscape-maximum"px)";
+@desktop: "(min-width: "@desktop-minimum"px and max-width: "@desktop-maximum"px)";
+@tv-720p: "(min-width: "@tv-720p-minimum"px and max-width: "@tv-720p-maximum"px)";
+@tv-1080p: "(min-width: "@tv-1080p-minimum"px)";

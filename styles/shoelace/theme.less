@@ -1,7 +1,7 @@
 // Theme
 
 body {
-	background-color: @footer-background-color;
+	background-color: @background-footer;
 }
 
 ::selection {
@@ -14,7 +14,6 @@ body {
     color:;
 }
 
-
 // Links
 a {
     color: @color-primary;
@@ -26,43 +25,61 @@ a {
     }
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: @padding;
+    padding-right: @padding;
+
+    &:before, &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
 header {
-    background: @header-background-color;
-    color: @header-text-color;
+    background: @background-header;
+    color: @color-header;
 
     #logo {
         display: inline-block;
-        margin: 20px 0;
+        margin-bottom: (@padding / 2);
+        margin-top: (@padding / 2);
     }
 
     h1, h2, h3, h4, h5, h6 {
 
         &.bar.middle span {
-            background: @header-background-color;
+            background: @background-header;
         }
     }
 }
 
 main {
-    background: @main-background-color;
-    color: @main-text-color;
+    background: @background-main;
+    color: @color-main;
 
     h1, h2, h3, h4, h5, h6 {
 
         &.bar.middle span {
-            background: @main-background-color;
+            background: @background-main;
         }
     }
 }
 
 footer {
-    background: @footer-background-color;
-    color: @footer-text-color;
+    background: @background-footer;
+    color: @color-footer;
 
     h1, h2, h3, h4, h5, h6 {
 
         &.bar.middle span {
-            background: inherit;
+            background: @background-footer;
         }
     }
 }
