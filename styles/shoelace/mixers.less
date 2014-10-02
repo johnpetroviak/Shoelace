@@ -1,0 +1,41 @@
+// Mixers
+
+.border-top-radius(@radius) {
+	border-top-right-radius: @radius;
+	border-top-left-radius: @radius;
+}
+
+.border-right-radius(@radius) {
+	border-bottom-right-radius: @radius;
+	 border-top-right-radius: @radius;
+}
+
+.border-bottom-radius(@radius) {
+	border-bottom-right-radius: @radius;
+	border-bottom-left-radius: @radius;
+}
+
+.border-left-radius(@radius) {
+	border-bottom-left-radius: @radius;
+	 border-top-left-radius: @radius;
+}
+
+.box-shadow(@box-shadow) {
+    box-shadow: @box-shadow;
+    -moz-box-shadow: @box-shadow;
+    -webkit-box-shadow: @box-shadow;
+}
+
+.transform(@transform) {
+    transform: @transform;
+    -moz-transform: @transform;
+    -o-transform: @transform;
+    -webkit-transform: @transform;
+}
+
+.transition(@transition) {
+    transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    -webkit-transition: @transition;
+}

@@ -1,0 +1,254 @@
+//  Utilities
+
+.clear {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	
+	&:after {
+		clear: both;
+	}
+}
+
+// Positioning
+.position-left {
+    float: left;
+}
+
+.position-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.position-right {
+    float: right;
+}
+
+// Hide
+.hidden {
+	display: none;
+}
+
+.hidden-print {
+    @media print {
+        display: none;
+    }
+}
+
+.hidden-tv-1080p {
+    @media @tv-1080p {
+        display: none;
+    }
+}
+
+.hidden-tv-720p {
+    @media @tv-720p {
+        display: none;
+    }
+}
+
+.hidden-desktop {
+    @media @desktop {
+        display: none;
+    }
+}
+
+.hidden-tablet-landscape {
+    @media @tablet-landscape {
+        display: none;
+    }
+}
+
+.hidden-tablet-portrait {
+    @media @tablet-portrait {
+        display: none;
+    }
+}
+
+.hidden-mobile-landscape {
+    @media @mobile-landscape {
+        display: none;
+    }
+}
+
+.hidden-mobile-portrait {
+    @media @mobile-portrait {
+        display: none;
+    }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+
+// Typography
+.text-uppercase-tv-1080p {
+    @media @tv-1080p {
+        text-transform: uppercase;
+    }
+}
+
+.text-uppercase-tv-720p {
+    @media @tv-720p {
+        text-transform: uppercase;
+    }
+}
+
+.text-uppercase-desktop {
+    @media @desktop {
+        text-transform: uppercase;
+    }
+}
+
+.text-uppercase-tablet-landscape {
+    @media @tablet-landscape {
+        text-transform: uppercase;
+    }
+}
+
+.text-uppercase-tablet-portrait {
+    @media @tablet-portrait {
+        text-transform: uppercase;
+    }
+}
+
+.text-uppercase-mobile-landscape {
+    @media @mobile-landscape {
+        text-transform: uppercase;
+    }
+}
+
+.text-uppercase-mobile-portrait {
+    @media @mobile-portrait {
+        text-transform: uppercase;
+    }
+}
+
+.text-left-tv-1080p {
+    @media @tv-1080p {
+        text-align: left;
+    }
+}
+
+.text-left-tv-720p {
+    @media @tv-720p {
+        text-align: left;
+    }
+}
+
+.text-left-desktop {
+    @media @desktop {
+        text-align: left;
+    }
+}
+
+.text-left-tablet-landscape {
+    @media @tablet-landscape {
+        text-align: left;
+    }
+}
+
+.text-left-tablet-portrait {
+    @media @tablet-portrait {
+        text-align: left;
+    }
+}
+
+.text-left-mobile-landscape {
+    @media @mobile-landscape {
+        text-align: left;
+    }
+}
+
+.text-left-mobile-portrait {
+    @media @mobile-portrait {
+        text-align: left;
+    }
+}
+
+.text-center-tv-1080p {
+    @media @tv-1080p {
+        text-align: center;
+    }
+}
+
+.text-center-tv-720p {
+    @media @tv-720p {
+        text-align: center;
+    }
+}
+
+.text-center-desktop {
+    @media @desktop {
+        text-align: center;
+    }
+}
+
+.text-center-tablet-landscape {
+    @media @tablet-landscape {
+        text-align: center;
+    }
+}
+
+.text-center-tablet-portrait {
+    @media @tablet-portrait {
+        text-align: center;
+    }
+}
+
+.text-center-mobile-landscape {
+    @media @mobile-landscape {
+        text-align: center;
+    }
+}
+
+.text-center-mobile-portrait {
+    @media @mobile-portrait {
+        text-align: center;
+    }
+}
+
+.text-right-tv-1080p {
+    @media @tv-1080p {
+        text-align: right;
+    }
+}
+
+.text-right-tv-720p {
+    @media @tv-720p {
+        text-align: right;
+    }
+}
+
+.text-right-desktop {
+    @media @desktop {
+        text-align: right;
+    }
+}
+
+.text-right-tablet-landscape {
+    @media @tablet-landscape {
+        text-align: right;
+    }
+}
+
+.text-right-tablet-portrait {
+    @media @tablet-portrait {
+        text-align: right;
+    }
+}
+
+.text-right-mobile-landscape {
+    @media @mobile-landscape {
+        text-align: right;
+    }
+}
+
+.text-right-mobile-portrait {
+    @media @mobile-portrait {
+        text-align: right;
+    }
+}

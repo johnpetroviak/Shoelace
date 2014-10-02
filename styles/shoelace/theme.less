@@ -1,0 +1,71 @@
+// Theme
+
+body {
+	background-color: @footer-background-color;
+	font-family: @font-family;
+	font-size: @font-size;
+	line-height: @line-height;
+}
+
+::selection {
+    background:;
+    color:;
+}
+
+::-moz-selection {
+    background:;
+    color:;
+}
+
+
+// Links
+a {
+    color: @color-primary;
+    text-decoration: none;
+    .transition(all 0.2s ease-in-out);
+
+    &.hover, &:active, &:focus {
+        text-decoration: underline;
+    }
+}
+
+header {
+    background: @header-background-color;
+    color: @header-text-color;
+
+    #logo {
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+
+        &.bar.middle span {
+            background: @header-background-color;
+        }
+    }
+}
+
+main {
+    background: @main-background-color;
+    color: @main-text-color;
+
+    h1, h2, h3, h4, h5, h6 {
+
+        &.bar.middle span {
+            background: @main-background-color;
+        }
+    }
+}
+
+footer {
+    background: @footer-background-color;
+    color: @footer-text-color;
+
+    h1, h2, h3, h4, h5, h6 {
+
+        &.bar.middle span {
+            background: inherit;
+        }
+    }
+}
