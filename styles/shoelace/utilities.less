@@ -1,5 +1,65 @@
 //  Utilities
 
+// Ribbon
+.ribbon {
+    height: 75px;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    width: 75px;
+
+    span {
+        display: block;
+        font-size: 12px;
+        padding: 5px 0;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        top: 15px;
+        width: 110px;
+    }
+
+    &.ribbon-left {
+        left: -1px;
+
+        span {
+            left: -27px;
+            .transform(rotate(-45deg));
+        }
+    }
+
+    &.ribbon-right {
+        right: -1px;
+
+        span {
+            left: -8px;
+            .transform(rotate(45deg));
+        }
+    }
+
+    &.ribbon-primary {
+
+        span {
+            background: @color-primary;
+            color: #fff;
+        }
+    }
+}
+
+// Lists
+.list-square {
+    padding-left: 30px;
+
+    li {
+        color: @color-primary;
+        list-style: square;
+
+        p {
+            color: @color-default;
+        }
+    }
+}
+
 .clear {
 	&:before,
 	&:after {
